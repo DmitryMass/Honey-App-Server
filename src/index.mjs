@@ -92,7 +92,7 @@ fastify.post(
     transporter.sendMail(adminAlert);
     transporter.sendMail(userAlert);
 
-    return reply.send('Чекайте повідомлення.');
+    return reply.send({ info: 'Чекайте повідомлення.' });
   }
 );
 
